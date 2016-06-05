@@ -4,11 +4,11 @@ public class Temperature2 {
 
     public static void main(String[] args) {
 
-            Calculate cel = new Celsius();
-            cel.calculate(100);
+            Degrees cel = new Celsius();
+            cel.calcDegrees(100);
 
-            Calculate far = new Fahrenheit();
-            far.calculate(212);
+            Degrees far = new Fahrenheit();
+            far.calcDegrees(212);
 
         }
     }
