@@ -14,7 +14,7 @@ public class Area2 {
             System.out.print("Input a: ");
             double p2 = sc.nextDouble();
 
-            Figure2 triangeleArea = new Triangle2();
+            Calculate triangeleArea = new Triangle2();
             triangeleArea.calculate(p1,p2);
 
         } else if (select == 2) {
@@ -23,7 +23,7 @@ public class Area2 {
             System.out.print("Input R: ");
             double p2 = sc.nextDouble();
 
-            Figure2 circleArea = new Circle2();
+            Calculate circleArea = new Circle2();
             circleArea.calculate(p1,p2);
         }
         else {
@@ -33,7 +33,7 @@ public class Area2 {
             System.out.print("Input d: ");
             double p2 = sc.nextDouble();
 
-            Figure2 squareArea = new Square2();
+            Calculate squareArea = new Square2();
             squareArea.calculate(p1,p2);
         }
     }

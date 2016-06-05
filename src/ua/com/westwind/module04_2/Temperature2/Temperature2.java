@@ -6,7 +6,7 @@ public class Temperature2 {
     static final double p1= 1.80;
     static final double p2= 32.00;
     public static void main(String[] args) {
-        System.out.print("Select covertation method.  Celsium_to_Faringate: 1, Faringate_to_Celsium: 2 ");
+        System.out.print("Select method.  Celsium_to_Faringate: 1, Faringate_to_Celsium: 2 ");
         int select = sc.nextInt();
         if (select == 1){
             System.out.print("Input C: ");
