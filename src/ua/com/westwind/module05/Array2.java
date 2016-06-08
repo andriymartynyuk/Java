@@ -10,6 +10,7 @@ public class Array2 {
             }
         }
         System.out.println(min);
+
         int max = intArray[0];
         for (int x = 0; x < intArray.length; x++) {
             if (max < intArray[x]) {
