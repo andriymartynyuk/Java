@@ -1,4 +1,4 @@
-package ua.com.westwind.module06;
+package ua.com.westwind.MyTest;
 
 public class NagativAgeException extends Exception{
     private int ageValue;

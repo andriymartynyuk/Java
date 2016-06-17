@@ -1,4 +1,4 @@
-package ua.com.westwind.module06.RuntimeException04.Temperature2;
+package ua.com.westwind.module06.RuntimeException_module04.Temperature;
 
 class Celsius implements Degrees {
     @Override

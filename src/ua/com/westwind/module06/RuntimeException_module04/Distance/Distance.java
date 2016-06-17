@@ -1,4 +1,4 @@
-package ua.com.westwind.module06.RuntimeException04.Distance2;
+package ua.com.westwind.module06.RuntimeException_module04.Distance;
 import java.util.Scanner;
 
 public class Distance {

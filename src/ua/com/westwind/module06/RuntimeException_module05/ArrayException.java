@@ -1,6 +1,6 @@
-package ua.com.westwind.module06.RuntimeException05;
+package ua.com.westwind.module06.RuntimeException_module05;
 
-public class Array3 {
+public class ArrayException {
     public static void main(String[] args) {
         int[] intArray = new int[]{10, 20, 30, 40, 50};
 

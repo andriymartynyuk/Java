@@ -1,4 +1,4 @@
-package ua.com.westwind.module06.RuntimeException04.Temperature2;
+package ua.com.westwind.module06.RuntimeException_module04.Temperature;
 
 interface Degrees {
     double p1= 1.80;

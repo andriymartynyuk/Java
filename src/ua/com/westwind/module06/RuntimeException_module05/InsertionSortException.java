@@ -1,6 +1,6 @@
-package ua.com.westwind.module06.RuntimeException05;
+package ua.com.westwind.module06.RuntimeException_module05;
 
-public class InsertionSort3 {
+public class InsertionSortException {
     public static void main(String a[]) {
         int[] arr1 = {9, 35, 5, 65, 8, 12, 32, 123};
         int[] arr2 = doInsertionSort(arr1);

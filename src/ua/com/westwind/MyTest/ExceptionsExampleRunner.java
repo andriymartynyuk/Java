@@ -1,4 +1,4 @@
-package ua.com.westwind.module06;
+package ua.com.westwind.MyTest;
 
 import java.util.Scanner;
 

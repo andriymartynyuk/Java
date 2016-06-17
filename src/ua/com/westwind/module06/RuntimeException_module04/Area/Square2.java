@@ -1,4 +1,4 @@
-package ua.com.westwind.module06.RuntimeException04.Area2;
+package ua.com.westwind.module06.RuntimeException_module04.Area;
 
 class Square2 implements Shape {
     @Override

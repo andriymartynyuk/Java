@@ -1,4 +1,4 @@
-package ua.com.westwind.module06.RuntimeException04.Area2;
+package ua.com.westwind.module06.RuntimeException_module04.Area;
 
 public class Area2 {
     private static double p1 = 3.14;

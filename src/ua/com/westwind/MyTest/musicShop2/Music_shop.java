@@ -1,4 +1,4 @@
-package ua.com.westwind.module06.musicShop2;
+package ua.com.westwind.MyTest.musicShop2;
 
 import java.util.HashMap;
 import java.util.List;
