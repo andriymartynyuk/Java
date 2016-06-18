@@ -18,7 +18,7 @@ public class Distance {
 
         int p1 = ((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1));
         double p2 = Math.sqrt(p1);
-        System.out.println("Distance D = "+p2);
-        System.out.println("Round Distance D = "+Math.round(p2*100.0)/100.0);
+        System.out.println("Distance_NumberFormatException D = "+p2);
+        System.out.println("Round Distance_NumberFormatException D = "+Math.round(p2*100.0)/100.0);
     }
 }
