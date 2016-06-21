@@ -15,9 +15,13 @@ public class SimpleTableDemo extends JPanel {
     public SimpleTableDemo() {
         super(new GridLayout(1,0));
 
-        String[] columnNames = {};
+       String[] columnNames = {"Name","TYPE","SIZE",};
 
-        Object[][] data = {};
+        Object[][] data = {
+                {"Kathy", "Smith", new Integer(5)},
+                {"Kathy", "Smith", new Integer(5)},
+                {"Kathy", "Smith", new Integer(5)}
+        };
 
         final JTable table = new JTable(data, columnNames);
         table.setPreferredScrollableViewportSize(new Dimension(500, 70));
@@ -54,11 +58,6 @@ public class SimpleTableDemo extends JPanel {
         System.out.println("--------------------------");
     }
 
-    /**
-     * Create the GUI and show it.  For thread safety,
-     * this method should be invoked from the
-     * event-dispatching thread.
-     */
     private static void createAndShowGUI() {
         //Create and set up the window.
         JFrame frame = new JFrame("SimpleTableDemo");
@@ -75,8 +74,6 @@ public class SimpleTableDemo extends JPanel {
     }
 
     public static void main(String[] args) {
-        //Schedule a job for the event-dispatching thread:
-        //creating and showing this application's GUI.
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 createAndShowGUI();

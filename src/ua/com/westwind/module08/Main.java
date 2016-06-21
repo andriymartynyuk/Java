@@ -1,41 +1,31 @@
 package ua.com.westwind.module08;
 import java.util.*;
-/*import ua.com.westwind.module03.fileExtension.AudioFile;
-import ua.com.westwind.module03.fileExtension.TextFile;
-import ua.com.westwind.module03.fileExtension.ImageFile;*/
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-import java.awt.Dimension;
-import java.awt.GridLayout;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
 
-        List audioFile = Arrays.asList("AudioFile",".mp3", "43");
-        List textFile = Arrays.asList("TextFile",".txt", "40");
-        List imageFile = Arrays.asList("ImageFile",".png","35");
+        List audioFile = Arrays.asList("AudioFile", ".mp3", "43");
+        List textFile = Arrays.asList("TextFile", ".txt", "40");
+        List imageFile = Arrays.asList("ImageFile", ".png", "35");
 
         List<String> fileList = new ArrayList<>();
         fileList.addAll(audioFile);
         fileList.addAll(textFile);
         fileList.addAll(imageFile);
 
-        List asterFlower = Arrays.asList("Aster","new", "white");
-        List tulipFlower = Arrays.asList("Tulip","old", "red");
-        List roseFlower = Arrays.asList("Rose","new","yellow");
+        List asterFlower = Arrays.asList("Aster", "new", "white");
+        List tulipFlower = Arrays.asList("Tulip", "old", "red");
+        List roseFlower = Arrays.asList("Rose", "new", "yellow");
 
         List<String> flowerList = new ArrayList<>();
         flowerList.addAll(asterFlower);
         flowerList.addAll(tulipFlower);
         flowerList.addAll(roseFlower);
 
-        List guitarInstrument = Arrays.asList("Guitar","new", "6");
-        List pianoInstrument = Arrays.asList("Piano","new", "4");
-        List trumpletInstrument = Arrays.asList("Trumplet","old","5");
+        List guitarInstrument = Arrays.asList("Guitar", "new", "6");
+        List pianoInstrument = Arrays.asList("Piano", "new", "4");
+        List trumpletInstrument = Arrays.asList("Trumplet", "old", "5");
 
         List<String> instrumentList = new ArrayList<>();
         instrumentList.addAll(guitarInstrument);
@@ -46,36 +36,71 @@ public class Main {
             System.out.print(i+" ");
         }*/
 
-        Map<String,List> mapList = new HashMap<>();
-        mapList.put("File",fileList);
-        mapList.put("Flower",flowerList);
-        mapList.put("Instruments",instrumentList);
+        Map<String, List<String>> mapList = new HashMap<String, List<String>>();
+        mapList.put("File", fileList);
+        mapList.put("Flower", flowerList);
+        mapList.put("Instruments", instrumentList);
 
-        String[] columnNames = {};
+        for (Map.Entry<String, List<String>> entry : mapList.entrySet()) {
+            entry.getKey();
+            entry.getValue();
+            System.out.println("\t"+entry.getKey()+"|\t"+entry.getValue());
 
-        Object[][] data = {};
+        }
 
         /*mapList.forEach((k,v)->System.out.println(k + v));*/
-
-        SimpleTableDemo table = new SimpleTableDemo();
-        System.out.println(table(mapList.keySet(),mapList.values()));
-
-/*        String[] columnNames = {};
-        Object[][] data = {};*/
-
-
-
-
-
-
-        /*System.out.println("\n"+mapList);*/
-        /*mapList.forEach((k,v)->System.out.println("columName : " + k + " data : " + v));*/
-
-
 
 
     }
 }
+
+
+
+
+
+
+
+
+
+        /*JTable buildTable (Map<?,?> mapList) {
+            JTable model = new DefaultTableModel(new Object[] { "Key", "Value" }, 0);
+            for (Map.Entry<?,?> entry : map.entrySet()) {
+                model.addRow(new Object[] { entry.getKey(), entry.getValue() });
+            }
+            return model;
+        }*/
+
+       /* JTable buildTable(Map<String,List> mapList){
+
+            String columnNames[] = { "MyString", "MyFloat" };
+            Object[][] data = new Object[mapList.size()][2];
+            int i = 0;
+            for(Map.Entry<String, List> entry : mapList.entrySet()) {
+
+                data[i][0] = entry.getKey();
+                data[i][1] = entry.getValue().toString();
+                i++;
+            }
+
+            JTable table = new JTable(data, columnNames);
+
+            System.out.println(table);
+            *//*return table;*//*
+        }*/
+
+        /*SimpleTableDemo table = new SimpleTableDemo();*/
+        /*String[] columnNames = {mapList.keySet().toString()};
+
+        Object[][] data = {};*/
+
+        /*System.out.println(table(mapList.keySet(),mapList.values()));*/
+
+/*        String[] columnNames = {};
+        Object[][] data = {};*/
+
+        /*System.out.println("\n"+mapList);*/
+        /*mapList.forEach((k,v)->System.out.println("columName : " + k + " data : " + v));*/
+
 
         /*mapList.forEach((k,v)-> {
             System.out.println("Item : " + k + " Count : " + v);
