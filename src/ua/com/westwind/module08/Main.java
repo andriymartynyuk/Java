@@ -41,14 +41,14 @@ public class Main {
         mapList.put("Flower", flowerList);
         mapList.put("Instruments", instrumentList);
 
-        for (Map.Entry<String, List<String>> entry : mapList.entrySet()) {
+        mapList.forEach((k,v)->System.out.println("\t"+k+"|\t"+v));
+
+        /*for (Map.Entry<String, List<String>> entry : mapList.entrySet()) {
             entry.getKey();
             entry.getValue();
             System.out.println("\t"+entry.getKey()+"|\t"+entry.getValue());
 
-        }
-
-        /*mapList.forEach((k,v)->System.out.println(k + v));*/
+        }*/
 
 
     }
