@@ -4,3 +4,6 @@ out/*
 
 #class
 *.class
+#/src/ua/com/westwind/
+#.idea/
+#out/
