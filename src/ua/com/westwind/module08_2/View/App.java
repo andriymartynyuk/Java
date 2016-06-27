@@ -1,7 +1,7 @@
-package ua.com.westwind.module08;
+package ua.com.westwind.module08_2.View;
 import java.util.*;
 
-public class Main {
+public class App {
     public static void main(String[] args) {
 
         List audioFile = Arrays.asList("AudioFile", ".mp3", "43");
