@@ -1,6 +1,6 @@
 package ua.com.westwind.module08_2.Model.impl.fileExtension;
 
-import ua.com.westwind.module08_2.Model.impl.FileExtention;
+import ua.com.westwind.module08_2.Model.FileExtention;
 
 public class FileExtensionImpl implements FileExtention {
     private String name;
