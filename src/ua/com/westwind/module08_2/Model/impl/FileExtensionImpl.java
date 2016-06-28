@@ -1,4 +1,4 @@
-package ua.com.westwind.module08_2.Model.impl.fileExtension;
+package ua.com.westwind.module08_2.Model.impl;
 
 import ua.com.westwind.module08_2.Model.FileExtention;
 
