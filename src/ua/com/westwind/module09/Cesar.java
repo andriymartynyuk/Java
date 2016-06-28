@@ -6,8 +6,8 @@ public class Cesar {
 
 public static void main(String[] args) throws IOException {
 
-        Collection test = new Collection();
-        test.printOut();
+        CollectionToFile outCollection = new CollectionToFile();
+        outCollection.printOut();
 
         File f = new File("C:\\TextFile.txt");
         BufferedReader br = new BufferedReader(new FileReader(f));

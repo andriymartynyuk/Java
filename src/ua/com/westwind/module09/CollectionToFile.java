@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.*;
 
-public class Collection {
+public class CollectionToFile {
 
     public void printOut() {
         List audioFile = Arrays.asList("AudioFile", ".mp3", "43");
@@ -52,7 +52,7 @@ public class Collection {
             out.writeObject(mapList.toString());
             out.close();
             fileOut.close();
-            System.out.println("Collection saved to file");
+            System.out.println("CollectionToFile saved to file");
         }catch(IOException i)
         {
             i.printStackTrace();
