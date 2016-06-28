@@ -1,7 +1,6 @@
 package ua.com.westwind.module08_2.Controller;
 
 import ua.com.westwind.module08_2.Model.Bouquet;
-import ua.com.westwind.module08_2.Model.impl.bouquet.BouquetImpl;
 
 
 public class ControllerBouquet {
@@ -21,14 +20,10 @@ public class ControllerBouquet {
     }
 
 
-
-<<<<<<< HEAD
-    public void addFlower (Bouquet bouquet) { this.bouquet.getBouquetInternal().add(bouquet);}
-=======
     public void addFlower(){}
 
     public void showBoquet(){}
->>>>>>> 27e5edd0a3e40b60e3786e493e726bc262d84e48
+
 }
 
 

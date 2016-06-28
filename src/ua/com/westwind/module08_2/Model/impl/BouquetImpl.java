@@ -35,12 +35,5 @@ public class BouquetImpl implements Bouquet {
         this.price = price;
     }
 
-<<<<<<< HEAD:src/ua/com/westwind/module08_2/Model/impl/bouquet/BouquetImpl.java
-    public Set<Bouquet> getBouquetInternal(){
-        if(this.)
-    }
-=======
->>>>>>> 27e5edd0a3e40b60e3786e493e726bc262d84e48:src/ua/com/westwind/module08_2/Model/impl/BouquetImpl.java
-
 }
 

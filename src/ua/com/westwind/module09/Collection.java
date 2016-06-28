@@ -1,12 +1,13 @@
-package ua.com.westwind.module08;
+package ua.com.westwind.module09;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.*;
-import java.util.List;
 
-public class Main {
+public class Collection {
 
-    public static void main(String[] args) {
-        List<String> collectionList;
-
+    public void printOut() {
         List audioFile = Arrays.asList("AudioFile", ".mp3", "43");
         List textFile = Arrays.asList("TextFile", ".txt", "40");
         List imageFile = Arrays.asList("ImageFile", ".png", "35");
@@ -34,23 +35,27 @@ public class Main {
         instrumentList.addAll(pianoInstrument);
         instrumentList.addAll(trumpletInstrument);
 
-        /*for (String i : fileList) {
-            System.out.print(i+" ");
-        }*/
-
         Map<String, List<String>> mapList = new HashMap<String, List<String>>();
         mapList.put("File", fileList);
         mapList.put("Bouquetimpl", flowerList);
         mapList.put("Instruments", instrumentList);
 
-        /*mapList.forEach((k,v)->System.out.println("\t"+k+"|\t"+v));*/
-        /*mapList.forEach((k,v)->System.out.println(v));*/
-
-        for (Map.Entry<String, List<String>> entry : mapList.entrySet()) {
+       /* for (Map.Entry<String, List<String>> entry : mapList.entrySet()) {
             entry.getKey();
-            collectionList = entry.getValue();
-            /*System.out.println("\t"+entry.getKey()+"|\t"+entry.getValue());*/
-            System.out.println(collectionList);
+            entry.getValue();
+            }*/
+
+        try
+        {
+            FileOutputStream fileOut = new FileOutputStream("C:\\TextFile.txt");
+            ObjectOutputStream out = new ObjectOutputStream(fileOut);
+            out.writeObject(mapList.toString());
+            out.close();
+            fileOut.close();
+            System.out.println("Collection saved to file");
+        }catch(IOException i)
+        {
+            i.printStackTrace();
         }
 
     }

@@ -1,3 +1,4 @@
+/*
 package ua.com.westwind.module08_2.View;
 
 import ua.com.westwind.module08_2.Controller.ControllerBouquet;
@@ -14,6 +15,7 @@ public class App1 {
 
     }
 }
+*/
 
 
 
