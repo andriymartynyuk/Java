@@ -1,8 +1,6 @@
-package ua.com.westwind.module08_2.Model.impl.bouquet;
+package ua.com.westwind.module08_2.Model.impl;
 
 import ua.com.westwind.module08_2.Model.Bouquet;
-
-import java.util.Set;
 
 public class BouquetImpl implements Bouquet {
     private String name;
@@ -35,8 +33,6 @@ public class BouquetImpl implements Bouquet {
         this.price = price;
     }
 
-    @Override
-    public void addFlower(Set<BouquetImpl> String){
 
-    }
 }
+

@@ -1,4 +1,4 @@
-package ua.com.westwind.module08_2.View;
+package ua.com.westwind.MyTest;
 import java.util.*;
 
 public class App_test {
