@@ -15,10 +15,10 @@ public class App {
         controllerBouquet.addFlower( new BouquetImpl("Rose", "yellow", 40));
         controllerBouquet.showBoquet();
 
-        ControllerFileExtension controllerFileExtension = new ControllerFileExtension(new FileExtensionImpl("FileExtentions"));
-        controllerFileExtension.addExtention( new FileExtensionImpl("TextFile", ".txt", 25));
-        controllerFileExtension.addExtention( new FileExtensionImpl("ImageFile", ".png", 30));
-        controllerFileExtension.addExtention( new FileExtensionImpl("AudiFile", "jpg", 40));
+        ControllerFileExtension controllerFileExtension = new ControllerFileExtension(new FileExtensionImpl("FileExtensions"));
+        controllerFileExtension.addExtension( new FileExtensionImpl("TextFile", ".txt", 25));
+        controllerFileExtension.addExtension( new FileExtensionImpl("ImageFile", ".png", 30));
+        controllerFileExtension.addExtension( new FileExtensionImpl("AudiFile", "jpg", 40));
         controllerFileExtension.showExtentions();
 
         ControllerMusicShop controllerMusicShop = new ControllerMusicShop(new MusicShopImpl("MusicShop"));

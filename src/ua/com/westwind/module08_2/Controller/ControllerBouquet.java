@@ -12,4 +12,11 @@ public class ControllerBouquet {
     public void setBouquet(Bouquet bouquet) { this.bouquet = bouquet; }
 
 
+    public void addFlower (){
+
+    }
+
+    public void showBoquet(){
+        System.out.println("Bouquet");
+    }
 }
