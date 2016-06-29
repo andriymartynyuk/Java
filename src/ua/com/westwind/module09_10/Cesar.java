@@ -9,6 +9,8 @@ public static void main(String[] args) throws IOException {
     Collection collection = new Collection();
     collection.colList();
 
+    System.out.println(new java.io.File(".").getAbsolutePath());
+
     File f = new File("TextFile.txt");
         BufferedReader br = new BufferedReader(new FileReader(f));
         try {
