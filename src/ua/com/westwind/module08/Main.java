@@ -44,14 +44,14 @@ public class Main {
         mapList.put("Instruments", instrumentList);
 
         /*mapList.forEach((k,v)->System.out.println("\t"+k+"|\t"+v));*/
-        /*mapList.forEach((k,v)->System.out.println(v));*/
+        mapList.forEach((k,v)->System.out.println(v));
 
-        for (Map.Entry<String, List<String>> entry : mapList.entrySet()) {
+        /*for (Map.Entry<String, List<String>> entry : mapList.entrySet()) {
             entry.getKey();
             collectionList = entry.getValue();
-            /*System.out.println("\t"+entry.getKey()+"|\t"+entry.getValue());*/
+            *//*System.out.println("\t"+entry.getKey()+"|\t"+entry.getValue());*//*
             System.out.println(collectionList);
-        }
+        }*/
 
     }
 }

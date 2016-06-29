@@ -1,58 +1,19 @@
 package ua.com.westwind.module09_10;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.util.*;
+import java.io.*;
+import java.util.List;
 
 public class CollectionToFile {
 
-    public void printOut() {
-        List audioFile = Arrays.asList("AudioFile", ".mp3", "43");
-        List textFile = Arrays.asList("TextFile", ".txt", "40");
-        List imageFile = Arrays.asList("ImageFile", ".png", "35");
-
-        List<String> fileList = new ArrayList<>();
-        fileList.addAll(audioFile);
-        fileList.addAll(textFile);
-        fileList.addAll(imageFile);
-
-        List asterFlower = Arrays.asList("Aster", "new", "white");
-        List tulipFlower = Arrays.asList("Tulip", "old", "red");
-        List roseFlower = Arrays.asList("Rose", "new", "yellow");
-
-        List<String> flowerList = new ArrayList<>();
-        flowerList.addAll(asterFlower);
-        flowerList.addAll(tulipFlower);
-        flowerList.addAll(roseFlower);
-
-        List guitarInstrument = Arrays.asList("Guitar", "new", "6");
-        List pianoInstrument = Arrays.asList("Piano", "new", "4");
-        List trumpletInstrument = Arrays.asList("Trumplet", "old", "5");
-
-        List<String> instrumentList = new ArrayList<>();
-        instrumentList.addAll(guitarInstrument);
-        instrumentList.addAll(pianoInstrument);
-        instrumentList.addAll(trumpletInstrument);
-
-        Map<String, List<String>> mapList = new HashMap<String, List<String>>();
-        mapList.put("File", fileList);
-        mapList.put("Bouquetimpl", flowerList);
-        mapList.put("Instruments", instrumentList);
-
-       /* for (Map.Entry<String, List<String>> entry : mapList.entrySet()) {
-            entry.getKey();
-            entry.getValue();
-            }*/
-
+    public void printOut(String s) {
         try
         {
-            FileOutputStream fileOut = new FileOutputStream("C:\\TextFile.txt");
+            FileOutputStream fileOut = new FileOutputStream("TextFile.txt");
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
-            out.writeObject(mapList.toString());
+            out.writeObject(s);
             out.close();
             fileOut.close();
-            System.out.println("CollectionToFile saved to file");
+            System.out.println("Запись в файл окончена"+"\n");
         }catch(IOException i)
         {
             i.printStackTrace();
