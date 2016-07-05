@@ -13,6 +13,7 @@ public class Caesar implements Encryption {
             res += EncryptChar(text.charAt(i));
         System.out.println("Закодированая коллекция: ");
         System.out.println(res+"\n");
+
         //Wright result to file
         IOMethods writeCollection = new IOMethods();
         writeCollection.write(res);
@@ -30,6 +31,7 @@ public class Caesar implements Encryption {
 
         System.out.println("Разкодированая коллекция: ");
         System.out.println(res+"\n");
+
         //Write result to file
         IOMethods writeCollection = new IOMethods();
         writeCollection.write(res);
