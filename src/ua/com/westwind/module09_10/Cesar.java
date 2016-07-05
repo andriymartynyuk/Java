@@ -12,31 +12,31 @@ public static void main(String[] args) throws IOException {
     System.out.println(new java.io.File(".").getAbsolutePath());
 
     File f = new File("TextFile.txt");
-        BufferedReader br = new BufferedReader(new FileReader(f));
-        try {
-            String line;
-            while ((line = br.readLine()) != null) {
-                // Code
-                if (line.isEmpty())
-                    throw new RuntimeException("Line пустой");
-                String res = "";
-                for (int i = 0; i < line.length(); i++)
-                    res += EncryptChar(line.charAt(i));
-                System.out.println("Закодированая коллекция");
-                System.out.println(res+"\n");
-                // Decode
-                String codedText = res;
-                    if (codedText.isEmpty())
-                        throw new RuntimeException("resDecode = пустой, нечего декодировать");
-                    String resDecode = "";
-                    for (int i=0; i<codedText.length(); i++)
-                        resDecode += DecryptChar(codedText.charAt(i));
-                System.out.println("Разкодированая коллекция");
-                System.out.println(resDecode+"\n");
-            }
-        }finally{
-                br.close();
-            }
+    BufferedReader br = new BufferedReader(new FileReader(f));
+    try {
+        String line;
+        while ((line = br.readLine()) != null) {
+            // Code
+            if (line.isEmpty())
+                throw new RuntimeException("Line пустой");
+            String res = "";
+            for (int i = 0; i < line.length(); i++)
+                res += EncryptChar(line.charAt(i));
+            System.out.println("Закодированая коллекция");
+            System.out.println(res+"\n");
+            // Decode
+            String codedText = res;
+            if (codedText.isEmpty())
+                throw new RuntimeException("resDecode = пустой, нечего декодировать");
+            String resDecode = "";
+            for (int i=0; i<codedText.length(); i++)
+                resDecode += DecryptChar(codedText.charAt(i));
+            System.out.println("Разкодированая коллекция");
+            System.out.println(resDecode+"\n");
+        }
+    }finally{
+        br.close();
+    }
  }
 
 

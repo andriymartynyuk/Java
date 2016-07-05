@@ -6,7 +6,7 @@ public class ArrayException {
 
     public static void main(String[] args) {
         try {
-            System.out.println("Input Array size ");
+            System.out.println("Input ArraySortingMethods size ");
             int size = sc.nextInt();
             int[] intArray = new int[size];
             for (int i = 0; i < intArray.length; i++) {
