@@ -1,6 +1,7 @@
 package ua.com.westwind.module11.module05;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -11,11 +12,17 @@ import static org.junit.Assert.*;
  * Created by Admin on 05.07.2016.
  */
 public class ArraySortingMethodsTest {
+    int[] intArray = new int[]{10, 20, 30, 40, 50};
 
+    @Before
+    public void setUp() throws Exception {
+
+
+    }
 
     @Test
     public void sortArray1() throws Exception {
-        int[] intArray = new int[]{10, 20, 30, 40, 50};
+
 
         ArraySortingMethods arraySorting1 = new ArraySortingMethods();
         final int[] result = arraySorting1.sortArray1(intArray);
