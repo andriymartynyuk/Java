@@ -1,6 +1,6 @@
 package ua.com.westwind.module11.module04.Temperature;
 
-public class Temperature2 {
+public class Temperature {
 
     public static void main(String[] args) {
 
