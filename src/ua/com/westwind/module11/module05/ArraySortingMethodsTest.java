@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 public class ArraySortingMethodsTest {
     private int[] intArray = new int[]{10, 20, 30, 40, 50};
 
-    @Test
+    @Test(timeout = 1000)
     public void sortArray1() throws Exception {
 
         ArraySortingMethods arraySorting1 = new ArraySortingMethods();
@@ -19,7 +19,7 @@ public class ArraySortingMethodsTest {
         assertArrayEquals(new int[]{10,50},result);
     }
 
-    @Test
+    @Test(timeout = 1000)
     public void sortArray2() throws Exception {
 
         ArraySortingMethods arraySorting2 = new ArraySortingMethods();
@@ -28,7 +28,7 @@ public class ArraySortingMethodsTest {
         assertArrayEquals(new int[]{10,50},result);
     }
 
-    @Test
+    @Test(timeout = 1000)
     public void sortArray3() throws Exception {
 
         ArraySortingMethods arraySorting3 = new ArraySortingMethods();

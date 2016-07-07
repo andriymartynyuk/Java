@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
  * Created by Admin on 05.07.2016.
  */
 public class TriangleTest {
-    @Test
+    @Test(timeout = 1000)
     public void calculateArea() throws Exception {
         final double p1 = 10;
         final double p2 = 15;

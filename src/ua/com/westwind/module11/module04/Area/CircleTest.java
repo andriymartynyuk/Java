@@ -1,6 +1,7 @@
 package ua.com.westwind.module11.module04.Area;
 
 import org.junit.Assert;
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 
@@ -9,7 +10,7 @@ import static org.junit.Assert.*;
  * Created by Admin on 05.07.2016.
  */
 public class CircleTest {
-    @org.junit.Test
+    @Test(timeout = 1000)
     public void calculateArea() throws Exception {
         final double p1 = 3.14;
         final double p2 = 15;

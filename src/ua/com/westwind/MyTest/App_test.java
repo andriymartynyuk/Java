@@ -23,7 +23,7 @@ public class App_test {
         flowerList.addAll(roseFlower);
 
         List guitarInstrument = Arrays.asList("Guitar", "new", "6");
-        List pianoInstrument = Arrays.asList("Piano", "new", "4");
+        List pianoInstrument = Arrays.asList("Piano", "new", "7");
         List trumpletInstrument = Arrays.asList("Trumplet", "old", "5");
 
         List<String> instrumentList = new ArrayList<>();
@@ -31,9 +31,9 @@ public class App_test {
         instrumentList.addAll(pianoInstrument);
         instrumentList.addAll(trumpletInstrument);
 
-        /*for (String i : fileList) {
+        for (String i : fileList) {
             System.out.print(i+" ");
-        }*/
+        }
 
         Map<String, List<String>> mapList = new HashMap<String, List<String>>();
         mapList.put("File", fileList);

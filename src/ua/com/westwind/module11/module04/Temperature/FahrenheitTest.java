@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
  * Created by Admin on 05.07.2016.
  */
 public class FahrenheitTest {
-    @Test
+    @Test(timeout = 1000)
     public void calcDegrees() throws Exception {
         final double c = 212;
 

@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
  * Created by Admin on 05.07.2016.
  */
 public class BetweenPointsTest {
-    @Test
+    @Test(timeout = 1000)
     public void calcDistance() throws Exception {
         final int x2 = 5;
         final int x1 = 2;
