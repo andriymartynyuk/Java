@@ -5,16 +5,18 @@ import java.nio.charset.Charset;
 
 public class IOMethods {
 
-    public void write(String line) {
+    public boolean write(String line) {
         try {
             Charset charset = Charset.forName("US-ASCII");
             FileOutputStream fos = new FileOutputStream("TextFile.txt");
             Writer out = new OutputStreamWriter(fos, charset);
             out.write(line);
             out.close();
+            return true;
 
         } catch (IOException i) {
             i.printStackTrace();
+            return false;
         }
     }
 

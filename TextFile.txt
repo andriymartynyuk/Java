@@ -1,2 +1,0 @@
-null[Aster, new, white, Tulip, old, red, Rose, new, yellow][Guitar, new, 6, Piano, new, 4, Trumplet, old, 5][AudioFile, .mp3, 43, TextFile, .txt, 40, ImageFile, .png, 35]
-
