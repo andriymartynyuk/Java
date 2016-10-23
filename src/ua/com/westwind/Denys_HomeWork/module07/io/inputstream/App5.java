@@ -1,3 +1,4 @@
+/*
 package ua.com.westwind.Denys_HomeWork.module07.io.inputstream;
 
 import javax.swing.*;
@@ -6,9 +7,11 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 
+*/
 /**
  * Created by Администратор on 14.07.2016.
- */
+ *//*
+
 public class App5 {
 
     public static void main(String[] args) throws Exception {
@@ -37,10 +40,12 @@ public class App5 {
 
 
 
-       /*
+       */
+/*
         try (PrintStream filePrintStream = new PrintStream(out);) {
 
 
-        }*/
+        }*//*
+
     }
-}
+}*/

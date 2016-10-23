@@ -1,3 +1,4 @@
+/*
 package ua.com.westwind.Denys_HomeWork.module07.io.inputstream;
 
 import com.app.Person;
@@ -6,9 +7,11 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
+*/
 /**
  * Created by Администратор on 14.07.2016.
- */
+ *//*
+
 public class App1 {
 
     public static void main(String[] args) throws Exception {
@@ -63,3 +66,4 @@ public class App1 {
         return p;
     }
 }
+*/
